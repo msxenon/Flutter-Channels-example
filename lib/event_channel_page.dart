@@ -26,15 +26,15 @@ class _EventChannelPageState extends State<EventChannelPage> {
         child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('Device info is:'),
+              Text('Location Service status:'),
               StreamBuilder<bool>(builder: (context,snapshot){
                 if(snapshot.hasData)
                   {
-                    return Text(snapshot.data ? 'Location service is On': 'Location service is Off');
+                    return Text(snapshot.data ? 'is On': 'is Off');
                   }
                 else
                   {
-                    return  Text('unKnown result');
+                    return  Text('Unknown result');
                   }
               },
               stream: streamController.stream,
