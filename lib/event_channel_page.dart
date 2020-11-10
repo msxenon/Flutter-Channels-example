@@ -22,6 +22,12 @@ class _EventChannelPageState extends State<EventChannelPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: new AppBar(
+          title: new Text(
+            "Events channel",
+            style: new TextStyle(color: Colors.white),
+          ),
+        ),
       body: Center(
         child: Column(
             mainAxisSize: MainAxisSize.min,

@@ -22,6 +22,12 @@ class _MethodChannelPageState extends State<MethodChannelPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: new AppBar(
+        title: new Text(
+          "Method channel",
+          style: new TextStyle(color: Colors.white),
+        ),
+      ),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
