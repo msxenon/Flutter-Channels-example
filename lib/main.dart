@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_channels_demo/event_channel_page.dart';
 import 'package:flutter_channels_demo/method_channel.dart';
 
 void main() {
@@ -41,7 +42,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            RaisedButton(onPressed: null,child: Text("Event type Channel",style: TextStyle(color: Colors.white),),),
+            RaisedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context){
+                return EventChannelPage();
+              }));
+            },child: Text("Event type Channel",),),
             RaisedButton(onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context){
                 return MethodChannelPage();

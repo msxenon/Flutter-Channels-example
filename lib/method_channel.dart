@@ -23,7 +23,11 @@ class _MethodChannelPageState extends State<MethodChannelPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(_deviceData),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+            children: [
+          Text('Device info is:'),
+          Text(_deviceData)]),
       ),
     );
   }
