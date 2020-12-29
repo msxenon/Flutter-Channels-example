@@ -18,6 +18,13 @@ class MyApp extends StatelessWidget {
       home: MyHomePage(title: 'Flutter Channels demo'),
     );
   }
+  void testFeature(){
+    //added on master
+  }
+
+  void testMaster(){
+    //added on master
+  }
 }
 
 class MyHomePage extends StatefulWidget {
